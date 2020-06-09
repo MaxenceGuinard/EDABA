@@ -111,6 +111,8 @@ CREATE TABLE students_final_exams
 
 	--students
 
+		INSERT INTO students VALUES (0, 'Kevin', 'Smith', 'London');
+		INSERT INTO students VALUES (1, 'Jean', 'Philips', 'Phoenix');
 
 	--courses
 
@@ -121,26 +123,31 @@ CREATE TABLE students_final_exams
 
 		INSERT INTO homework VALUES (0, 'Matrix problem set', 0.5, TO_DATE('2020/06/9 12:00:00', 'YYYY/MM/DD HH24:MI:SS'), TO_DATE('2020/06/16 23:59:00', 'YYYY/MM/DD HH24:MI:SS'), 0);
 
-		-- TO_DATE('1999/04/26 04:40:00', 'YYYY/MM/DD HH24:MI:SS')
 	--quizzes
 
+		INSERT INTO quizzes VALUES (0, 'Matrix quizz', 1, TO_DATE('2020/06/9 12:00:00', 'YYYY/MM/DD HH24:MI:SS'), TO_DATE('2020/06/16 23:59:00', 'YYYY/MM/DD HH24:MI:SS'), 0);
 
 	--final_exams
+
+		INSERT INTO final_exams VALUES (0, 'Matrix exam', 2.5, TO_DATE('2020/06/9 12:00:00', 'YYYY/MM/DD HH24:MI:SS'), TO_DATE('2020/06/16 23:59:00', 'YYYY/MM/DD HH24:MI:SS'), 0);
 
 
 	-- students_courses
 
+		INSERT INTO students_courses VALUES (0, 0);
+		INSERT INTO students_courses VALUES (0, 1);
 
 	-- students_homework
 
+		INSERT INTO students_homework VALUES (15, 0, 1);
 
 	-- students_quizzes
 
-
+		INSERT INTO students_homework VALUES (12, 0, 0);
 
 	-- students_final_exams
 
-
+		INSERT INTO students_homework VALUES (13, 0, 1);
 
 -- FK
 
