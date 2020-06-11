@@ -38,7 +38,7 @@
 	BEGIN
 			SELECT deadline INTO date_ FROM homework WHERE id_ = :new.homework_id;
 
-			IF :new.given_date > date_ THEN
+			IF :new.drop_date > date_ THEN
 				:new.mark := 0;
 			END IF;
 	END;

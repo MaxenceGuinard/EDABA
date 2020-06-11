@@ -76,7 +76,7 @@
 	CREATE TABLE students_homework
 	(
 		mark FLOAT NOT NULL,
-		given_date DATE NOT NULL,
+		drop_date DATE NOT NULL,
 		homework_id integer NOT NULL,
 		students_id integer NOT NULL
 	);
@@ -85,7 +85,7 @@
 	CREATE TABLE students_quizzes
 	(
 		mark FLOAT NOT NULL,
-		given_date DATE NOT NULL,
+		drop_date DATE NOT NULL,
 		quizzes_id integer NOT NULL,
 		students_id integer NOT NULL
 	);
@@ -94,7 +94,7 @@
 	CREATE TABLE students_final_exams
 	(
 		mark FLOAT NOT NULL,
-		given_date DATE NOT NULL,
+		drop_date DATE NOT NULL,
 		final_exams_id integer NOT NULL,
 		students_id integer NOT NULL
 	);
