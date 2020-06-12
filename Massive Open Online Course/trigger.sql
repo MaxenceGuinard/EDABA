@@ -4,12 +4,11 @@ FOR EACH ROW
 DECLARE
 	counter integer;
 BEGIN
-		SELECT COUNT(:new.courses_id) INTO counter FROM students_courses;
+		SELECT COUNT(DISTINCT courses_id || :new.students_id) INTO counter FROM students_courses WHERE students_id = :new.students_id;
 		IF counter > 9 THEN
 			raise_application_error (-20001,'Student had already 10 courses.');
 		END IF;
 END;
-	
 
 CREATE OR REPLACE TRIGGER DATE_PASSED_HOMEWORK
 BEFORE INSERT ON students_homework

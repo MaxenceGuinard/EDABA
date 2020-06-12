@@ -13,7 +13,7 @@ INSERT INTO students_final_exams VALUES (13, TO_DATE('2020/06/15 12:00:00', 'YYY
 
 
 -- test MAX_TEN_COURSES_FOR_A_STUDENT trigger (student try to register for a 11th course)
-INSERT INTO students_courses VALUES (0, 10);
+INSERT INTO students_courses VALUES (10, 0);
 
 -- test DATE_PASSED_HOMEWORK trigger (student drop homework too late (mark = 0))
 DELETE FROM students_homework WHERE homework_id = 0 AND students_id = 1;

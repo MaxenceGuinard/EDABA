@@ -65,8 +65,9 @@ CREATE TABLE final_exams
 
 CREATE TABLE students_courses
 (
-	students_id integer NOT NULL,
-	courses_id integer NOT NULL
+	courses_id integer NOT NULL,
+	students_id integer NOT NULL
+	
 );
 
 
